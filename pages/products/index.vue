@@ -13,5 +13,7 @@ useHead({
   title: "Products",
 });
 // Fetch Products
+// const { data: products } = await $fetch("/api/products");
 const { data: products } = await useFetch("/api/products");
+console.log(products);
 </script>
