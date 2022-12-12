@@ -6,13 +6,13 @@
 
         <ol class="flex gap-4">
           <li>
-            <NuxtLink to="/">Home</NuxtLink>
+            <NuxtLink to="/" exact-active-class="text-[#7145e7] font-semibold">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/products">Products</NuxtLink>
+            <NuxtLink to="/products" exact-active-class="text-[#7145e7] font-semibold">Products</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/about-us">About</NuxtLink>
+            <NuxtLink to="/about-us" exact-active-class="text-[#7145e7] font-semibold">About</NuxtLink>
           </li>
         </ol>
       </nav>
@@ -23,10 +23,3 @@
     </div>
   </div>
 </template>
-
-<style>
-.router-link-exact-active {
-  color: #7145e7;
-  font-weight: 600;
-}
-</style>
