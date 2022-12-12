@@ -9,12 +9,13 @@
 </template>
 
 <script setup>
-  const { product } = defineProps(["product"]);
+const { product } = defineProps(["product"]);
 </script>
- <style scoped>
-  .thumb {
-    max-height: 120px;
-    max-width: 70%;
-    margin: 0 auto;
-  }
+<style scoped>
+.thumb {
+  max-height: 120px;
+  min-height: 120px;
+  max-width: 70%;
+  margin: 0 auto;
+}
 </style>

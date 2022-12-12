@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="grid grid-cols-4 gap-5">
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
       <div v-for="product in products">
         <ProductCard :product="product" />
       </div>
@@ -15,5 +15,4 @@ useHead({
 // Fetch Products
 // const { data: products } = await $fetch("/api/products");
 const { data: products } = await useFetch("/api/products");
-console.log(products);
 </script>
