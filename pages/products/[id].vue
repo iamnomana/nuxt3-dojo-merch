@@ -15,7 +15,7 @@ const { id } = useRoute().params;
 
 // Fetch Data
 const { data: product } = await useFetch(
-  `https://fakestoreapi.com/products/${id}`,
+  `/api/products/${id}`,
   { key: id }
 );
 
